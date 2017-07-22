@@ -7,6 +7,9 @@
     "test": "test",
     "start": "nodemon index.js"
   },
+  "engines": {
+    "node": "6.10.2"
+  },
   "repository": {
     "type": "git",
     "url": "graphqlserver"

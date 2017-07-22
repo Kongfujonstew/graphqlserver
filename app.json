@@ -3,8 +3,7 @@
   "name": "graphqlserver",
   "description": "Simple GraphQL Server",
   "addons": [
-    "heroku-postgresql:hobby-dev",
-    "heroku-redis:hobby-dev"
+    "heroku-postgresql:hobby-dev"
   ],
   "buildpacks": [
     {

@@ -1,0 +1,15 @@
+{
+  "name": "graphqlserver",
+  "version": "1.0.0",
+  "description": "Simple GraphQL Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "graphqlserver"
+  },
+  "author": "JMS",
+  "license": "ISC"
+}

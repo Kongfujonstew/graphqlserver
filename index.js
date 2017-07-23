@@ -6,7 +6,22 @@ import { makeExecutableSchema } from 'graphql-tools';
 import typeDefs from './graphQL/schema';
 import resolvers from './graphQL/resolvers';
 
-const newSchema = makeExecutableSchema({
+import models from './models';
+
+
+
+// var env = process.env.NODE_ENV || "development"
+// var config = require(path(__dirname, '..', 'config', 'config.json'))[env];  
+
+// if (process.env.DATABASE_URL) {
+//   var sequelize = new Sequelize(process.env.DATABASE_URL, config);
+// } else {
+//   var sequelize = new Sequelize(config.database, config.username, config.password, config);
+// };
+
+// var sequelize = new(Sequelize(process.env.DATABASE_URL, config));
+
+const schema = makeExecutableSchema({
   typeDefs,
   resolvers
 });
@@ -20,11 +35,9 @@ app.use('/graphiql', graphiqlExpress({
   endPointURL: '/graphql'
 }));
 
-app.use('/graphql', bodyParser.json(), graphqlExpress({ schema: newSchema }));
+app.use('/graphql', bodyParser.json(), graphqlExpress({ schema, context: { models } }));
 
-app.listen(port, () => {
-  console.log("Listening on port " + port);
-});
+models.sequelize.sync().then(() => app.listen(port));
 
 app.get('/', (req, res) => {
   res.send('hello world');

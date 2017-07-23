@@ -26,7 +26,10 @@
     "graphql-server-express": "^1.0.2",
     "graphql-tools": "^1.1.0",
     "morgan": "^1.8.2",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "pg": "^7.0.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.4.2"
   },
   "devDependencies": {}
 }

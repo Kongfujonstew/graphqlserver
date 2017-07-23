@@ -1,8 +1,6 @@
 export default {
   Query: {
-    hello: (p, a, c) => {
-      return 'hi';
-    }
+    getUser: (p, a, { models }) => models.User.findOne()
   }
 };
 

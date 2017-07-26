@@ -2,12 +2,22 @@ import { sequelize } from 'sequelize';
 
 export default (sequelize, Datatypes) => {
   const User = sequelize.define("User", {
-    username: Datatypes.STRING
+    id: {
+      type: Datatypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true
+    },
+    username: Datatypes.STRING,
+    room: {
+      type: Datatypes.STRING,
+      defaultValue: "Front Page"
+    }
+
   });
 
   // User.associate = (models) {
-  //   User.hasMany(models.Hobby);
+  //   User.hasMany(models.Post);
   // }
 
   return User;
-}
+};

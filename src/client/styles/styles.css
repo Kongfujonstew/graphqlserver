@@ -1,0 +1,123 @@
+html, body {
+  /*width: 100%;*/
+  min-height: 600px
+  min-width: 800px;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'lato', sans-serif;
+  font-size: 1em;
+}
+
+div, form, img {
+  margin: 0
+  padding: 0;
+}
+
+.windowSize {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flexContainer {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flexCenterVertical {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; 
+}
+
+.flexCenterHorizontal {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.flexOneofTwo {
+  width: 50%;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+}
+
+.flexTwoofTWo {
+  width: 50%;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+}
+
+.flexOneofThree {
+  width: 33.3%;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+}
+
+.flexTwoofThree {
+  width: 33.3%;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+}
+
+.flexThreeofThree {
+  width: 33.3%;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+}
+
+.twoThirdHeight {
+  height: 66%;
+}
+
+.thirdHeight {
+  height: 33%;
+}
+
+.fullHeight {
+  height: 100%;
+}
+
+.fourFifthHeight {
+  height: 80%;
+}
+
+.oneFifthHeight {
+  height: 20%;
+}
+
+.oneFifthWidth {
+  width: 20%;
+}
+
+.oneTenthWidth {
+  width: 10%;
+}
+
+.oneQuarterHeight {
+  height: 25%;
+}
+
+.threeQuarterHeight {
+  height: 75%;
+}
+
+
+
+
+
+.blackBackground {
+  background-color: black;
+}
+
+
+.white {
+  color: white;
+}
+
+
+
